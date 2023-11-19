@@ -11,7 +11,7 @@ var z = x();
 
 /**
  * Explaination :
- * Baasicall the function y() is returned with it's lexical scope.
+ * Baasically the function y() is returned with it's lexical scope.
  * It remebers the a [REFERECE to its memory location]
  * Hence we are able to access 'a' inside fucntion y() even exection of x is DONE.
  */
