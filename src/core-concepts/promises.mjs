@@ -56,9 +56,25 @@ const p3 = new Promise((resolve, reject) => {
  *  Irrespective of if it is "FULLFILLED" or "REJECTED";
  */
 
-console.warn("Promise.race");
+// console.warn("Promise.race");
 
-Promise.race([p1, p2, p3])
+// Promise.race([p1, p2, p3])
+//   .then((message) => {
+//     console.log(message);
+//   })
+//   .catch((message) => {
+//     console.error(message);
+//   });
+
+/**
+ * ----------Promise.any([p1,p2,p3])------------
+ *  It waits for any promise to get "FULLFILLED" or "RESOLVED".
+ *  It ignores any "rejected" promise and waits for the "FIRST SUCCESS".
+ *  "SUCCESS SEEKING".
+ *  If every promise fails, it will return an "AGGREGATE ERROR."
+ */
+console.warn("Promise.any()");
+Promise.any([p1, p2, p3])
   .then((message) => {
     console.log(message);
   })
