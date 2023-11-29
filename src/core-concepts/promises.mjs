@@ -33,3 +33,19 @@ const p3 = new Promise((resolve, reject) => {
 //   .catch((message) => {
 //     console.error(message);
 //   });
+
+/**
+ * ----------Promise.allSettled([p1,p2,p3])------------
+ *  It will wait for all the promises to get complete
+ *  Wether it is Success or Fails.
+ *  It returns an array that can contains both the values
+ *  Either Fullfilled or Rejected Promises.
+ */
+console.warn("Promise.allSettled()");
+Promise.allSettled([p1, p2, p3])
+  .then((message) => {
+    console.log(message);
+  })
+  .catch((message) => {
+    console.error(message);
+  });
