@@ -41,8 +41,24 @@ const p3 = new Promise((resolve, reject) => {
  *  It returns an array that can contains both the values
  *  Either Fullfilled or Rejected Promises.
  */
-console.warn("Promise.allSettled()");
-Promise.allSettled([p1, p2, p3])
+// console.warn("Promise.allSettled()");
+// Promise.allSettled([p1, p2, p3])
+//   .then((message) => {
+//     console.log(message);
+//   })
+//   .catch((message) => {
+//     console.error(message);
+//   });
+
+/**
+ * ----------Promise.race([p1,p2,p3])------------
+ *  In case of race it returns first "SETTLED" promise. (Whatever completed first.)
+ *  Irrespective of if it is "FULLFILLED" or "REJECTED";
+ */
+
+console.warn("Promise.race");
+
+Promise.race([p1, p2, p3])
   .then((message) => {
     console.log(message);
   })
