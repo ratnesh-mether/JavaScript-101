@@ -4,5 +4,8 @@ import "./styles.css";
 
 //------------Map-Filter-Reduce--------------
 
-import "./core-concepts/map-filter-reduce.mjs";
+// import "./core-concepts/map-filter-reduce.mjs";
 
+//------------Promises--------------
+
+import "./core-concepts/promises.mjs";
