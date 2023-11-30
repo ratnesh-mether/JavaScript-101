@@ -8,4 +8,8 @@ import "./styles.css";
 
 //------------Promises--------------
 
-import "./core-concepts/promises.mjs";
+// import "./core-concepts/promises.mjs";
+
+//-----------Debouncing--------------
+
+import "./core-concepts/deboucing.mjs";
