@@ -12,4 +12,8 @@ import "./styles.css";
 
 //-----------Debouncing--------------
 
-import "./core-concepts/deboucing.mjs";
+// import "./core-concepts/deboucing.mjs";
+
+// -----------Second Largest from Array-------------
+
+import "./coding-problems/second-largest-array.mjs";
