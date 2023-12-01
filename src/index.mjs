@@ -16,4 +16,8 @@ import "./styles.css";
 
 // -----------Second Largest from Array-------------
 
-import "./coding-problems/second-largest-array.mjs";
+// import "./coding-problems/second-largest-array.mjs";
+
+// -----------Immdiately Invoked Function-------------
+
+import "./core-concepts/immidiately-invoked-functions.mjs";
