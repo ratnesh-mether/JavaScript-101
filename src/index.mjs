@@ -20,4 +20,8 @@ import "./styles.css";
 
 // -----------Immdiately Invoked Function-------------
 
-import "./core-concepts/immidiately-invoked-functions.mjs";
+// import "./core-concepts/immidiately-invoked-functions.mjs";
+
+// -----------Ways to Create Object-------------
+
+import "./core-concepts/ways-of-object-creation.mjs";
