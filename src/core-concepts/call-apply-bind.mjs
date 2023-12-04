@@ -86,3 +86,33 @@ function hello(greet) {
 
 let wish = hello("Hello");
 wish("Ratnesh");
+
+//  Mock
+
+var obj = {
+  name: "vivek",
+  surname: "Gholve",
+};
+
+function getNameCall(hometown, state) {
+  console.log(this.name + " " + this.surname);
+  console.log(hometown + " " + state);
+}
+
+getNameCall.call(obj, "BMT", "MH");
+
+function getNameApply(...args) {
+  console.log(this.name + " " + this.surname);
+  console.log(args[0] + " " + args[1]);
+}
+
+getNameApply.apply(obj, ["BMT", "MH"]);
+
+function getNameBind(hometown, state) {
+  console.log(this.name + " " + this.surname);
+  console.log(hometown + " " + state);
+}
+
+const getDetails = getNameBind.bind(obj, "BMT", "MH");
+
+getDetails();
