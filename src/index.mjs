@@ -24,4 +24,8 @@ import "./styles.css";
 
 // -----------Ways to Create Object-------------
 
-import "./core-concepts/ways-of-object-creation.mjs";
+// import "./core-concepts/ways-of-object-creation.mjs";
+
+// -----------Simplifying Nested Array-------------
+
+import "./coding-problems/simplifying-nested-array.mjs";
