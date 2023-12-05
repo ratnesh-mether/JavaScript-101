@@ -1,12 +1,12 @@
-// var obj = {
-//   name: "vivek",
-//   getName: function () {
-//     console.log(this);
-//     console.log(this.name);
-//   },
-// };
+var obj = {
+  name: "vivek",
+  getName: function () {
+    console.log(this);
+    console.log(this.name);
+  },
+};
 
-// obj.getName();
+obj.getName();
 
 function func1() {
   setTimeout(() => {
