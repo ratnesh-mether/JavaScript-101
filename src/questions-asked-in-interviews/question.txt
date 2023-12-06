@@ -1,0 +1,50 @@
+Question 1
+You have been given an array of integers. Your task is to write a function that finds the largest sum of three consecutive elements in the array using a sliding window approach. In other words, you need to scan through the array by considering three consecutive elements at a time, calculating their sum, and then moving the window forward by one element. Your function should return both the largest sum and the three elements that contribute to that sum.
+Here is an example to illustrate the problem:
+Given the array: [1, 2, 3, -9, -8, -12, -22, 1, 3, 9, 21, 3, 2, 4, 23]
+The function should output:
+Largest Sum: 33 (which corresponds to the sum of elements 21, 3, 9)
+Elements: [21, 3, 9]
+
+
+Question 2-
+
+
+You have been given an array of integers. Your task is to write a function that finds the Smallest sum of three consecutive elements in the array using a sliding window approach. In other words, you need to scan through the array by considering three consecutive elements at a time, calculating their sum, and then moving the window forward by one element. Your function should return both the largest sum and the three elements that contribute to that sum.
+Here is an example to illustrate the problem:
+Given the array: [1, 2, 3, -9, -8, -12, -22, 1, 3, 9, 21, 3, 2, 4, 23]
+ 
+
+
+
+
+
+
+
+
+Question 3-
+
+
+You have been provided with a three-dimensional array containing integers. Your task is to write a function that converts this 3D array into a two-dimensional array by flattening it, while preserving the order of the elements.
+Here's an example to help you understand the problem:
+Given the 3D array:
+[
+    [[1, 2], [3, 4]],
+    [[5, 6], [7, 8]],
+    [[9, 10], [11, 12]]
+]
+ 
+
+
+Output-
+
+[
+    [1, 2],
+    [3, 4],
+    [5, 6],
+    [7, 8],
+    [9, 10],
+    [11, 12]
+]
+ 
+
