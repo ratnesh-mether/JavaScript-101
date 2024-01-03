@@ -1,4 +1,4 @@
-// Call Apply and Bind
+// Call Apply and Bind.
 let printData = function (place, city, state) {
   console.log(
     this.firstName +
