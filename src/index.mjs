@@ -28,4 +28,8 @@ import "./styles.css";
 
 // -----------Simplifying Nested Array-------------
 
-import "./coding-problems/simplifying-nested-array.mjs";
+// import "./coding-problems/simplifying-nested-array.mjs";
+
+// // -----------Debounce and Throttle-------------
+
+// import "./core-concepts/debounce-throttle-v1.html";
