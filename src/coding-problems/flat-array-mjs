@@ -1,0 +1,12 @@
+ result = [];
+    function flatArray(array, depth) {
+        for (const i of array) {
+            if (Array.isArray(i) && depth < n) {
+                flatArray(i, depth+1)
+            } else {
+                result.push(i);
+            }
+        }
+        
+    }
+    flatArray(arr, 0);
