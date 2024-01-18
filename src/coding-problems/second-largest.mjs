@@ -19,4 +19,18 @@ for (i in array) {
   }
 }
 
-console.log(secondLargest);
+const value = array.reduce(
+  (acc, curr) => {
+    if (curr > acc.largest) {
+      acc.secondLargest = acc.largest;
+      acc.largest = curr;
+    }
+    return acc;
+  },
+  {
+    largest: -Infinity,
+    secondLargest: -Infinity,
+  },
+).secondLargest;
+
+console.log(value);
