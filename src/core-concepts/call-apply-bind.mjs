@@ -117,3 +117,60 @@ function getNameBind(hometown, state) {
 const getDetails = getNameBind.bind(obj, "BMT", "MH");
 
 getDetails();
+
+// ------------------
+
+let printData = function (message1, message2, message3, message4) {
+  console.log(message1, " " + message2 + " " + this.name + " " + this.lastname);
+  console.log(message3);
+  // console.log(message4)
+};
+const person = {
+  name: "John",
+  lastname: "Deer",
+};
+
+// printData.call(person, "Hello", "baban", "sham");
+
+// printData.apply(person, ["hello", "world", "ram", "hanuman"]);
+
+// const bindFunction = printData.bind(person, ["hello", "world", "ram"]);
+
+// bindFunction("cool", "fool");
+
+function xyz(welcome, goa) {
+  console.log(welcome, this.name + " " + this.lastname, goa);
+}
+
+Function.prototype.myBind = function (...args) {
+  let point = this;
+  let params = args.slice(1);
+  return (...args2) => {
+    point.apply(args[0], [...params, ...args2]);
+  };
+};
+
+// const a = xyz.myBind(person, "welcome");
+// a("goa")
+
+Function.prototype.myCall = function (...args) {
+  obj = args[0];
+  params = args.slice(1);
+  obj.fn = this;
+  console.log(params);
+  obj.fn(...params);
+};
+
+xyz.myCall(person, "Hello", "world");
+// xyz.call(person, "Hello", "world")
+
+Function.prototype.myApply = function (...args) {
+  obj = args[0];
+  params = args.slice(1);
+  obj.fn = this;
+  console.log(params);
+  obj.fn(...params[0]);
+};
+
+xyz.myApply(person, ["welcome", "goa"]);
+// xyz.apply(person, ["welcome", "goa"]);
