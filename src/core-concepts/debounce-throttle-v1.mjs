@@ -43,5 +43,5 @@ const incrementCount = () => {
   // debounce();
   throttle();
 };
-// console.log("hello");
+console.log("hello");
 button.addEventListener("click", incrementCount);
