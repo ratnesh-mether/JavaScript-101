@@ -9,4 +9,4 @@ function reversString(str) {
   return str === "" ? "" : reversString(str.substr(1)) + str.charAt(0);
 }
 
-console.log(reversString(str));
+// console.log(reversString(str));
