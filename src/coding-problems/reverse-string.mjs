@@ -1,7 +1,7 @@
 let str = "abcd";
 
-/* console.log(str.substr(1))
- */
+console.log(str.substr(1));
+
 /* const cleanedStr = str.replace(/[^\w]/g, '');
 console.log(cleanedStr.length) */
 
